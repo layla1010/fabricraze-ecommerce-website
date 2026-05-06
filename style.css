@@ -1,0 +1,655 @@
+body.login {
+    margin: 0;
+    padding: 0;
+    background-image: url(photos/background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: #5c70a3;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-background video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.noback {
+    border-radius: 50%;
+}
+
+.foot {
+    background-color: rgb(177, 174, 174);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Increase the height as needed */
+    font-size: 15px;
+}
+
+.rights-icon {
+    margin-right: 5px;
+}
+
+.no-white {
+    width: 70px;
+    height: 50px;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+    background-color: transparent;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.topnav {
+    font-family: "Sofia", sans-serif;
+    background-color: #d1d1d1;
+    overflow: hidden;
+    position: sticky;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: black;
+    z-index: 9999;
+}
+
+.topnav a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a.logo {
+    float: left;
+    color: #000000;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.topnav a:hover {
+    background-color: #2e2e2e;
+    color: white;
+}
+
+.topnav a.split:hover {
+    background-color: #2e2e2e;
+    color: white;
+}
+
+.topnav a.split {
+    float: right;
+    color: #000000;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.box {
+    width: 380px;
+    height: 780px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 8% auto 0;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.box img {
+    width: 100px;
+    margin-top: -50px;
+}
+
+.header {
+    width: 300px;
+    height: 50px;
+    text-transform: uppercase;
+    display: inline-flex;
+    padding-top: 20px;
+    padding-bottom: 0;
+    justify-content: space-between;
+}
+
+.header a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-flex;
+    padding-left: 25px;
+    padding-right: 25px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.header .active {
+    color: #df80ff;
+    font-weight: bold;
+    position: relative;
+}
+
+.header .active:after {
+    position: absolute;
+    border: none;
+    content: "";
+}
+
+#errorMsg {
+    color: red;
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+.content {
+    display: inline-flex;
+    overflow: hidden;
+}
+
+form {
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    flex-direction: column;
+    transition: right 0.5s;
+}
+
+.login a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.extend form {
+    right: 100%;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    display: block;
+    position: relative;
+    border: 4px solid #ffffff;
+    padding: 12px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 17px;
+    outline: none;
+}
+
+input[type=text]:hover, input[type=password]:hover, input[type=email]:hover {
+    border: 4px solid #df80ff;
+}
+
+input[type=submit] {
+    display: block;
+    position: relative;
+    border: 3px solid #80b9ff;
+    padding: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 25px;
+    background-color: #1192d8;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type=submit]:hover {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+}
+
+input[type=checkbox] {
+    background-color: #df80ff;
+}
+
+#check {
+    margin-top: 10px;
+    text-align: left;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+body.HomePage {
+    font-family: 'Cardo', sans-serif;
+    line-height: 2;
+}
+
+body.HomePage .firstContainer {
+    height: 1000px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(photos/basicLogo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+body.HomePage .aboutContainer {
+    height: auto;
+    background-color: #946b6c;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body.HomePage .about {
+    margin-bottom: 30px; /* Adjust the value as per your requirement */
+    font-weight: bold;
+    font-family: 'Sofia', sans-serif;
+}
+
+body.HomePage .info {
+    position: relative;
+    direction: rtl;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.contact {
+    font-family: "sofia", sans-serif;
+    line-height: 0.1;
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 20px;
+}
+
+.body-design {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(photos/pinter.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.h1-design {
+    text-align: center;
+    margin-top: 20px;
+    color: black; /* Adjust text color for better contrast */
+}
+
+#clothesCanvas {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #000;
+    background-color: #fff;
+    cursor: crosshair;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.controls label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: black; /* Adjust text color for better contrast */
+}
+
+.controls select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #9f5296;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+
+.measures {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+.photo-left, .photo-right {
+    flex: 1; /* Take up equal space on both sides of the form */
+    text-align: center;
+}
+
+.photo-left img, .photo-right img {
+    height: 100%; /* Increased height for the images */
+    width: 100px; /* Increased width for the images */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.photo-left img:hover, .photo-right img:hover {
+    transform: scale(3); /* Increase the scale for a larger hover effect */
+}
+
+.measurements-container {
+    background-color: #add8e6; /* Light blue background */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 20px; /* Spacing between photos and form */
+}
+
+.measureH1 {
+    color: #a020f0; /* Pink color for the heading */
+    text-align: center;
+}
+
+.labelMeasure {
+    display: block;
+    margin: 10px 0;
+}
+
+.inputMeasure[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.submitBtn {
+    background-color: #a020f0; /* Pink color for the button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+.submitBtn:hover {
+    background-color: #ba55d3; /* Darker shade of pink */
+}
+
+.photo-left, .photo-right {
+    flex: 1;
+    text-align: center;
+}
+
+.photo-left img, .photo-right img {
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.photo-left img:hover, .photo-right img:hover {
+    transform: scale(1.5);
+}
+
+.bodyGift {
+    background-image: url('photos/giftImg.png');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.page-title {
+    background-image: url('photos/giftImg.png'); /* Update this path to where your image is stored */
+    background-size: cover; /* Cover the entire area of the div */
+    background-position: center; /* Center the background image */
+    color: #fff; /* White text color for better readability */
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.bodyGift {
+    font-family: Arial, sans-serif;
+    background-color: #592f40; /* Light pink background */
+    margin: 0;
+}
+
+.page-title h1 {
+    color: #cc0052; /* Dark pink for the title */
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffe6f0; /* Light pink background */
+}
+
+.gift-card-container {
+    background-color: #c99ac7; /* Slightly darker pink for the container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px auto; /* Center the container */
+}
+
+.gifth2 {
+    color: #231f21; /* Dark pink for headings */
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.gift-card-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.gift-card-container input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.gift-card-container button {
+    width: 100%;
+    background-color: #ac99a2; /* Vibrant pink for the button */
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.gift-card-container button:hover {
+    background-color: #ff4d94; /* Slightly darker pink for hover state */
+}
+
+.bodyMarket {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3, #ec77ab);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    color: #333;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.quantity-control button {
+    background-color: #6e8efb;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-control button:hover {
+    background-color: #5a7bdb;
+}
+
+/* Styles for about.html */
+.aboutPage .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.aboutPage .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.aboutPage .card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.aboutPage .card h3 {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.aboutPage .card p {
+    padding: 0 15px 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.aboutPage .card:hover {
+    transform: scale(1.05);
+}
+
+.h1-about {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.aboutPage .container {
+    display: flex;
+    justify-content: center; /* Center the container */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.aboutPage .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.aboutPage .card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.aboutPage .card h3 {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.aboutPage .card p {
+    padding: 0 15px 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.aboutPage .card:hover {
+    transform: scale(1.05);
+}
+
+.h1-about {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
