@@ -58,6 +58,13 @@ index.js        Frontend interactivity
 
 ---
 
+## Documentation
+
+Project presentation:
+- [FabriCraze Presentation](docs/FabriCraze-Presentation.pptx)
+
+---
+
 ## How to Run
 1. Clone or download the repository.
 2. Open `Home.html` in your browser.
